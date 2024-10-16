@@ -1,0 +1,1 @@
+docker run --rm -v .:/opt/sources registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.2018-p7002 /bin/bash -c "export DISPLAY=:99 && Xvfb :99 & /opt/builder/bin/idea.sh helpbuilderinspect --source-dir /opt/sources --product Writerside/hi --runner other --output-dir /opt/sources/web"
